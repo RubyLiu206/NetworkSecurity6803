@@ -1,0 +1,29 @@
+What is security?
+--deal with intentional actions by intelligent adversaries to cause failures or gain unauthorized access
+Attacker Motivations:
+--Financial & Fame & Political & Curiosity
+
+Confidentiality
+Integrity
+Authenticity
+Availability
+
+Approaches to security
+--Prevention 
+--Detection
+--Response
+
+Several ways to classify threats
+-By damage done to the assets
+    Confidentiality, Integrity, Availability
+-By the source of attacks
+    (Type of) insider
+    (Type of) outsider
+    Local attacker
+    Remote attacker
+    Attacker resources
+-By the actions
+    Interception
+    Interruption
+    Modification
+    Fabrication
