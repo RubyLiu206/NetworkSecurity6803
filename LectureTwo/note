@@ -1,0 +1,39 @@
+title : Ethernet Refresher & Switch Overflows & ARP Spoofing & DHCP Attacks
+//application 
+//transport 
+//network
+need to add some details: 
+eavesdropping(pastive) & spoofing(active):
+spoofing concern about the path: off-path & on-path
+    link
+    physical
+
+
+ethernet basics:
+    6 byte addr
+    ifconfig -a (linux)     or       tcpdump -D (windows)
+    golbally unique
+    broadcast ethernet
+
+cam table ( switch ): stands for content addressable memory
+    have limited size
+    store information like MAC addr
+-----> CAM overflow:
+            being brodcast ----> opening more opportunitie sniffing 
+            how to solve: countermeasures or port security lock down port and sends an SNMP trap 
+
+port security:
+    limit numbers of MAC addr
+    timers on how long the MAC address 
+
+
+
+IP
+    four bytes
+    ifconfig -a
+ARP: address resolution and reverse address resolution
+ARP Spoofing:
+    ARP poisoning
+cloning attack:
+
+
