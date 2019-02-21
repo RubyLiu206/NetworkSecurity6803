@@ -1,0 +1,32 @@
+encryption
+    random number is really important
+    one-time pad encryption:
+        perfect secrecy
+        XOR
+    block ciphers: DES, AES same key reused for each block  
+                    not impossible to break, very experience
+                    AES: Rijndael algorithm
+            encrypting a large message: 
+                    ECB: encryt each one separately using the block cipher( if you know one of them, you can know another part)
+                    CBC: split plaintext into block, XOR each block with the result previous( last cipherblock depends on entire plaintext, still not guarantee integrity)
+                    CTR: random IV with the each split plaintext, not guarantee integrity, very fast, repeat-- one-time pad
+                    encryption should be randomized or stateful
+    known-plaintext attack:
+    chosen-plaintext attack: 1.change the pin 2.eavesdrops, repeat for any pin value
+    how to against that: 
+    chosen-ciphertext attack:
+    stream ciphers
+
+
+
+!!condifentiality, integrity, authentication!!
+encrypt+MAC
+    MAC is deterministic: message are equal, verify MAC
+    but attack: if msg is same, then MAC always the same, then attack
+hash function 
+one-way：hard to invert, SHA-1 is a common hash function
+collision resistance: should be hard to find x!=x', that h(x) = h(x')
+
+one-way not mean collision resistance
+hashing is one-way
+MD5 already attack successfully
